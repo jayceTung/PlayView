@@ -7,7 +7,7 @@ version = "1.0.0"
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "23.0.0"
     resourcePrefix "playview_"  //这个没搞清什么作用，暂时随意填。
 
     defaultConfig {
@@ -32,7 +32,7 @@ def siteUrl = "https://github.com/yinte12/PlayView"
 def gitUrl = "https://github.com/yinte12/PlayView.git"
 
 //填写唯一包名
-group = "com.joker.PlayView"
+group = "com.asuper.library"
 
 install {
     repositories.mavenInstaller {
@@ -74,7 +74,7 @@ install {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.0.1'
 }
 
 task sourcesJar(type: Jar) {
